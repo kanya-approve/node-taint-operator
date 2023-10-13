@@ -48,9 +48,9 @@ which provide a reconcile function responsible for synchronizing resources until
 
 1. Run your controller (this will run in the foreground, so switch to a new terminal if you want to leave it running):
 
-    ```sh
-    make run
-    ```
+```sh
+make run
+```
 
 **NOTE:** You can also run this in one step by running: `make install run`
 
