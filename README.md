@@ -1,10 +1,10 @@
 # Node Taint Remover
 
-Removes the kubernetes.io/arch from newly created nodes.
+Removes the "kubernetes.io/arch" taint from newly added nodes.
 
 ## Description
 
-GKE clusters with only ARM nodes do not have a way to set tolerations on pods related to Dataplane V2. This is a quick and dirty means to resolve [this](https://serverfault.com/questions/1141581/gke-arm-based-cluster-starts-in-invalid-state). Some of charts that I install don't have any settings for tolerations.
+GKE clusters with only ARM nodes do not have a way to set tolerations on pods related to Dataplane V2. This is a quick and dirty means to resolve [this](https://serverfault.com/questions/1141581/gke-arm-based-cluster-starts-in-invalid-state). Some of charts that I install don't have any settings for tolerations. Ideally, you should follow [this](https://cloud.google.com/kubernetes-engine/docs/how-to/prepare-arm-workloads-for-deployment) for deploying workloads on ARM nodes on GKE.
 
 ## Getting Started
 
