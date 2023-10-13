@@ -2,13 +2,13 @@
 # This file is used to track the info used to scaffold your project
 # and allow the plugins properly work.
 # More info: https://book.kubebuilder.io/reference/project-config.html
-domain: my.domain
+domain: kanya.io
 layout:
 - go.kubebuilder.io/v3
 plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
-projectName: node-taint-remover
+projectName: node-taint-operator
 repo: github.com/kanya-approve/node-taint-operator
 resources:
 - controller: true
