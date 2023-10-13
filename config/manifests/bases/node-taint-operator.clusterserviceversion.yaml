@@ -35,7 +35,7 @@ spec:
   - arm64
   links:
   - name: Node Taint Operator
-    url: https://node-taint-operator.domain
+    url: https://github.com/kanya-approve/node-taint-operator
   maintainers:
   - email: briankanya@gmail.com
     name: Brian Kanya
