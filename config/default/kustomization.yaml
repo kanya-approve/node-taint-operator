@@ -1,12 +1,12 @@
 # Adds namespace to all resources.
-namespace: node-taint-remover-system
+namespace: node-taint-operator-system
 
 # Value of this field is prepended to the
 # names of all resources, e.g. a deployment named
 # "wordpress" becomes "alices-wordpress".
 # Note that it should also match with the prefix (text before '-') of the namespace
 # field above.
-namePrefix: node-taint-remover-
+namePrefix: node-taint-operator-
 
 # Labels to add to all resources and selectors.
 #commonLabels:

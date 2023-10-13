@@ -1,6 +1,6 @@
-# Node Taint Remover
+# Node Taint Operator
 
-Removes the "kubernetes.io/arch" taint from newly added nodes.
+Currently only removes the "kubernetes.io/arch" taint from newly added nodes.
 
 ## Description
 
@@ -16,13 +16,13 @@ You’ll need a Kubernetes cluster to run against. You can use [KIND](https://si
 1. Build and push your image to the location specified by `IMG`:
 
 ```sh
-make docker-build docker-push IMG=<some-registry>/node-taint-remover:tag
+make docker-build docker-push IMG=<some-registry>/node-taint-operator:tag
 ```
 
 2. Deploy the controller to the cluster with the image specified by `IMG`:
 
 ```sh
-make deploy IMG=<some-registry>/node-taint-remover:tag
+make deploy IMG=<some-registry>/node-taint-operator:tag
 ```
 
 ### Undeploy controller
