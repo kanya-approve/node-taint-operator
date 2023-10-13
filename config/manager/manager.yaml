@@ -59,7 +59,7 @@ spec:
         - /manager
         args:
         - --leader-elect
-        image: ghcr.io/kanya-approve/node-taint-operator:latest
+        image: ghcr.io/kanya-approve/node-taint-operator:master
         name: manager
         securityContext:
           allowPrivilegeEscalation: false
