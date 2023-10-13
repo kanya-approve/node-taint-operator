@@ -60,7 +60,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           file: bundle.Dockerfile
-          labels: ${{ steps.bundle.outputs.labels }}
           platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.bundle.outputs.tags }}
