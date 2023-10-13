@@ -60,6 +60,7 @@ spec:
         args:
         - --leader-elect
         image: ghcr.io/kanya-approve/node-taint-operator:master
+        imagePullPolicy: Always
         name: manager
         securityContext:
           allowPrivilegeEscalation: false
