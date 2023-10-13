@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Docker meta
+      - name: Docker release meta
         id: meta
         uses: docker/metadata-action@v5
         with:
@@ -36,14 +36,14 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push
+      - name: Build and push image
         uses: docker/build-push-action@v5
         with:
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
-      - name: Docker meta
+      - name: Docker bundle meta
         id: bundle
         uses: docker/metadata-action@v5
         with:
