@@ -6,8 +6,8 @@ metadata:
     app.kubernetes.io/name: role
     app.kubernetes.io/instance: leader-election-role
     app.kubernetes.io/component: rbac
-    app.kubernetes.io/created-by: node-taint-remover
-    app.kubernetes.io/part-of: node-taint-remover
+    app.kubernetes.io/created-by: node-taint-operator
+    app.kubernetes.io/part-of: node-taint-operator
     app.kubernetes.io/managed-by: kustomize
   name: leader-election-role
 rules:
