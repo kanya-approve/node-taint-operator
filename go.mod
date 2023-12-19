@@ -3,7 +3,7 @@ module github.com/kanya-approve/node-taint-operator
 go 1.19
 
 require (
-	github.com/onsi/ginkgo/v2 v2.13.1
+	github.com/onsi/ginkgo/v2 v2.13.2
 	github.com/onsi/gomega v1.30.0
 	github.com/stretchr/testify v1.8.4
 	k8s.io/api v0.26.0
